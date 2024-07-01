@@ -36,11 +36,15 @@ Prefixes: `[pattern-calssification]_[progressive-index]_[filename].ipynb` where 
 List:
 
 - [00 Abstract Classes](./plg/00_01_abstract_classes.ipynb): playing with *abstract classes*.
-- [01 Maze Upgraded](./plg/01_00_maze_abstract_factory_builder.ipynb): an example of a class building a maze, it is upgraded by `Abstract Factory` and `Builder`.
+- [00 `cls` Argument](./plg/00_02_cls.ipynb): examples related to `cls` argument, i.e. class methods, metaclass methods, and alternate constructors.
+- [00 Metaclasses](./plg/00_03_metaclasses.ipynb): some examples of *metaclasses* implementation with Python.
+- [01 Maze with Creational Patterns](./plg/01_00_maze_creational_example.ipynb): an example of a class building a maze, upgraded by all the creational patterns here described.
+- [01 Maze with Abstract Factory and Builder](./plg/01_00_maze_abstract_factory_builder.ipynb): an example of a class building a maze, it is upgraded by `Abstract Factory` and `Builder`.
 - [01 Abstract Factory](./plg/01_02_abstract_factory.ipynb): `Abstract Factory` implementation of a GUI's generating multiple graphical components for different opertaing ssytems.
 - [01 Builder](./plg/01_03_builder.ipynb): `Builder` implementation of a house builder.
 - [01 Factory Method](./plg/01_04_factory_method.ipynb): `Factory Method` implementation of a vehicle factory. Direct comparison vs `Abstraact Factory` is also reporeted.
 - [01 Prototype](./plg/01_05_prototype.ipynb): `Prototype` implementation explained by a simple example.
+- [01 Singleton](./plg/01_06_singleton.ipynb): `Singleton` implementation, two examples: a standard one and another one based on *metaclasses*.
 
 # References
 

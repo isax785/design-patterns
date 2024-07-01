@@ -68,6 +68,16 @@ Related patterns:
 - `Prototypes`
 
 ---
+
+|            | `Abstract Factory`                                                                                                                                           | `Factory Method`                                                                                                                                |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Purpose    | Provides an interface for creating families of related or dependent objects without specifying their concrete classes.                                       | Provides an interface for creating an instance of a class, but allows subclasses to alter the type of objects that will be created.             |
+| Structure  | Involves multiple factory methods to create a variety of related objects, grouped together into families.                                                    | Involves a single method in a base class that is overridden by subclasses to create objects.                                                    |
+| Focus      | Focuses on creating a family of related products.                                                                                                            | Focuses on creating a single product.                                                                                                           |
+| Complexity | More complex as it involves multiple factory methods and interfaces for different product types.                                                             | Simpler in structure and usually deals with one level of inheritance.                                                                           |
+| Use Case   | Used when a system must be independent of the way its products are created, or when a system should be configured with one of multiple families of products. | Used when a class cannot anticipate the class of objects it must create or when a class wants its subclasses to specify the objects it creates. |
+
+---
 # Prototype
 
 > **Intent**: Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
