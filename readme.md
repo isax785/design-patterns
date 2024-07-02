@@ -28,10 +28,10 @@
 
 Prefixes: `[pattern-calssification]_[progressive-index]_[filename].ipynb` where `pattern-classification`:
 
-- `00_`: general
-- `01_`: creational
-- `02_`: structral
-- `03_`: behavioral
+- `00`: general
+- `01`: creational
+- `02`: structral
+- `03`: behavioral
 
 List:
 
@@ -45,8 +45,12 @@ List:
 - [01 Factory Method](./plg/01_04_factory_method.ipynb): `Factory Method` implementation of a vehicle factory. Direct comparison vs `Abstraact Factory` is also reporeted.
 - [01 Prototype](./plg/01_05_prototype.ipynb): `Prototype` implementation explained by a simple example.
 - [01 Singleton](./plg/01_06_singleton.ipynb): `Singleton` implementation, two examples: a standard one and another one based on *metaclasses*.
+- [02 Adapter](./plg/02_01_adapter.ipynb): `Adapter` implementation dealing with formatting weather data.
+- [02 Bridge](./plg/02_02_bridge.ipynb): `Bridge` implementation of a drawing application.
+- [02 Composite](./plg/02_03_composite.ipynb): `Composite` implementation of a file system structure.
+- [02 Decorator](./plg/02_04_decorator.ipynb): `Decorator` implemenatation of a simple cofee ordering system.
 
 # References
 
 - [Design Patterns - Gang of Four](./lnk/src/[book]%20Design%20Patterns_%20Elements%20of%20Reusable%20Object-Oriented%20Software.pdf%20-%20Shortcut.lnk)
-- [Practical Python Design Patterns](./src/lnk/[book]%20Practical%20Python%20Design%20Patterns_%20Pythonic%20Solutions%20to%20Common%20Problems.pdf%20-%20Shortcut.lnk))
+- [Practical Python Design Patterns](./src/lnk/[book]%20Practical%20Python%20Design%20Patterns_%20Pythonic%20Solutions%20to%20Common%20Problems.pdf%20-%20Shortcut.lnk)
