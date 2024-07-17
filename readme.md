@@ -28,7 +28,7 @@
 
 Prefixes: `[pattern-calssification]_[progressive-index]_[filename].ipynb` where `pattern-classification`:
 
-- `00`: general
+- `00`: general notes of Python
 - `01`: creational
 - `02`: structral
 - `03`: behavioral
@@ -38,6 +38,7 @@ List:
 - [00 Abstract Classes](./plg/00_01_abstract_classes.ipynb): playing with *abstract classes*.
 - [00 `cls` Argument](./plg/00_02_cls.ipynb): examples related to `cls` argument, i.e. class methods, metaclass methods, and alternate constructors.
 - [00 Metaclasses](./plg/00_03_metaclasses.ipynb): some examples of *metaclasses* implementation with Python.
+- [00 Decorators](./plg/00_04_decorators.ipynb): an overview of the implementationof decorators.
 - [01 Maze with Creational Patterns](./plg/01_00_maze_creational_example.ipynb): an example of a class building a maze, upgraded by all the creational patterns here described.
 - [01 Maze with Abstract Factory and Builder](./plg/01_00_maze_abstract_factory_builder.ipynb): an example of a class building a maze, it is upgraded by `Abstract Factory` and `Builder`.
 - [01 Abstract Factory](./plg/01_02_abstract_factory.ipynb): `Abstract Factory` implementation of a GUI's generating multiple graphical components for different opertaing ssytems.
