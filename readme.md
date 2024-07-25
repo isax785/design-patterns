@@ -11,12 +11,14 @@
 # Tasks
 
 - [ ] exercises (see book [Practical Python Design Patterns](./src/lnk/[book]%20Practical%20Python%20Design%20Patterns_%20Pythonic%20Solutions%20to%20Common%20Problems.pdf%20-%20Shortcut.lnk))
-- [ ] [Notebook](./ntb/practicalPythonDesignPatterns.ipynb)  explode into multiple interconnected files
+- [x] [Notebook](./ntb/practicalPythonDesignPatterns.ipynb)  explode into multiple interconnected files
 
 # Content
 
 - [Development](./dev/): scripts and notebooks for the development of classes and functions.
 - [Documentation](./doc/): some notes reported into documentation files.
+  - [Utilities and Various Notes](./doc/doc_utilities_and_various_notes.md)
+  - [Notation](./doc/doc_notation.excalidraw): a summary of the graphical notation used into the [Slides for the Training](./src/slides/)
 - [Notebooks](./ntb/): a collection of design patterns from the book `Practical Python Design Patterns`. Some exercises for practicing are provided.
 - [Objects](./obj/): classes and functions to be imported into other scripts.
 - [Playground](./plg/): a playground to practice design patterns.
@@ -50,6 +52,9 @@ List:
 - [02 Bridge](./plg/02_02_bridge.ipynb): `Bridge` implementation of a drawing application.
 - [02 Composite](./plg/02_03_composite.ipynb): `Composite` implementation of a file system structure.
 - [02 Decorator](./plg/02_04_decorator.ipynb): `Decorator` implemenatation of a simple cofee ordering system.
+- [02 Facade](./plg/02_05_facade.ipynb): `Facade` implementation of a home theater system with multiple subsysstems.
+- [02 Flyweight](./plg/02_06_flyweight.ipynb): `FLyweight` implementation of an object factory that creates multiple objects sharing memory.
+- [02 Proxy](./plg/02_07_proxy.ipynb): `Proxy` implementation of an expensive-to-create object (e.g. `Book`).
 
 # References
 
