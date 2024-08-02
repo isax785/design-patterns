@@ -19,7 +19,7 @@
 - [Documentation](./doc/): some notes reported into documentation files.
   - [Utilities and Various Notes](./doc/doc_utilities_and_various_notes.md)
   - [Notation](./doc/doc_notation.excalidraw): a summary of the graphical notation used into the [Slides for the Training](./src/slides/)
-- [Notebooks](./ntb/): a collection of design patterns from the book `Practical Python Design Patterns`. Some exercises for practicing are provided.
+- [Design Pattern Notebooks](./doc/ntb/): a collection of design patterns from the book `Practical Python Design Patterns`. Some exercises for practicing are provided.
 - [Objects](./obj/): classes and functions to be imported into other scripts.
 - [Playground](./plg/): a playground to practice design patterns.
 - [Sources](./src/): sources and utilities:
@@ -35,26 +35,26 @@ Prefixes: `[pattern-calssification]_[progressive-index]_[filename].ipynb` where 
 - `02`: structral
 - `03`: behavioral
 
-List:
+Folder `training2024` content:
 
-- [00 Abstract Classes](./plg/00_01_abstract_classes.ipynb): playing with *abstract classes*.
-- [00 `cls` Argument](./plg/00_02_cls.ipynb): examples related to `cls` argument, i.e. class methods, metaclass methods, and alternate constructors.
-- [00 Metaclasses](./plg/00_03_metaclasses.ipynb): some examples of *metaclasses* implementation with Python.
-- [00 Decorators](./plg/00_04_decorators.ipynb): an overview of the implementationof decorators.
-- [01 Maze with Creational Patterns](./plg/01_00_maze_creational_example.ipynb): an example of a class building a maze, upgraded by all the creational patterns here described.
-- [01 Maze with Abstract Factory and Builder](./plg/01_00_maze_abstract_factory_builder.ipynb): an example of a class building a maze, it is upgraded by `Abstract Factory` and `Builder`.
-- [01 Abstract Factory](./plg/01_02_abstract_factory.ipynb): `Abstract Factory` implementation of a GUI's generating multiple graphical components for different opertaing ssytems.
-- [01 Builder](./plg/01_03_builder.ipynb): `Builder` implementation of a house builder.
-- [01 Factory Method](./plg/01_04_factory_method.ipynb): `Factory Method` implementation of a vehicle factory. Direct comparison vs `Abstraact Factory` is also reporeted.
-- [01 Prototype](./plg/01_05_prototype.ipynb): `Prototype` implementation explained by a simple example.
-- [01 Singleton](./plg/01_06_singleton.ipynb): `Singleton` implementation, two examples: a standard one and another one based on *metaclasses*.
-- [02 Adapter](./plg/02_01_adapter.ipynb): `Adapter` implementation dealing with formatting weather data.
-- [02 Bridge](./plg/02_02_bridge.ipynb): `Bridge` implementation of a drawing application.
-- [02 Composite](./plg/02_03_composite.ipynb): `Composite` implementation of a file system structure.
-- [02 Decorator](./plg/02_04_decorator.ipynb): `Decorator` implemenatation of a simple cofee ordering system.
-- [02 Facade](./plg/02_05_facade.ipynb): `Facade` implementation of a home theater system with multiple subsysstems.
-- [02 Flyweight](./plg/02_06_flyweight.ipynb): `FLyweight` implementation of an object factory that creates multiple objects sharing memory.
-- [02 Proxy](./plg/02_07_proxy.ipynb): `Proxy` implementation of an expensive-to-create object (e.g. `Book`).
+- [00 Abstract Classes](./plg/training2024/00_01_abstract_classes.ipynb): playing with *abstract classes*.
+- [00 `cls` Argument](./plg/training2024/00_02_cls.ipynb): examples related to `cls` argument, i.e. class methods, metaclass methods, and alternate constructors.
+- [00 Metaclasses](./plg/training2024/00_03_metaclasses.ipynb): some examples of *metaclasses* implementation with Python.
+- [00 Decorators](./plg/training2024/00_04_decorators.ipynb): an overview of the implementationof decorators.
+- [01 Maze with Creational Patterns](./plg/training2024/01_00_maze_creational_example.ipynb): an example of a class building a maze, upgraded by all the creational patterns here described.
+- [01 Maze with Abstract Factory and Builder](./plg/training2024/01_00_maze_abstract_factory_builder.ipynb): an example of a class building a maze, it is upgraded by `Abstract Factory` and `Builder`.
+- [01 Abstract Factory](./plg/training2024/01_02_abstract_factory.ipynb): `Abstract Factory` implementation of a GUI's generating multiple graphical components for different opertaing ssytems.
+- [01 Builder](./plg/training2024/01_03_builder.ipynb): `Builder` implementation of a house builder.
+- [01 Factory Method](./plg/training2024/01_04_factory_method.ipynb): `Factory Method` implementation of a vehicle factory. Direct comparison vs `Abstraact Factory` is also reporeted.
+- [01 Prototype](./plg/training2024/01_05_prototype.ipynb): `Prototype` implementation explained by a simple example.
+- [01 Singleton](./plg/training2024/01_06_singleton.ipynb): `Singleton` implementation, two examples: a standard one and another one based on *metaclasses*.
+- [02 Adapter](./plg/training2024/02_01_adapter.ipynb): `Adapter` implementation dealing with formatting weather data.
+- [02 Bridge](./plg/training2024/02_02_bridge.ipynb): `Bridge` implementation of a drawing application.
+- [02 Composite](./plg/training2024/02_03_composite.ipynb): `Composite` implementation of a file system structure.
+- [02 Decorator](./plg/training2024/02_04_decorator.ipynb): `Decorator` implemenatation of a simple cofee ordering system.
+- [02 Facade](./plg/training2024/02_05_facade.ipynb): `Facade` implementation of a home theater system with multiple subsysstems.
+- [02 Flyweight](./plg/training2024/02_06_flyweight.ipynb): `FLyweight` implementation of an object factory that creates multiple objects sharing memory.
+- [02 Proxy](./plg/training2024/02_07_proxy.ipynb): `Proxy` implementation of an expensive-to-create object (e.g. `Book`).
 
 # References
 
