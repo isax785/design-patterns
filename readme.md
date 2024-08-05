@@ -55,6 +55,17 @@ Folder `training2024` content:
 - [02 Facade](./plg/training2024/02_05_facade.ipynb): `Facade` implementation of a home theater system with multiple subsysstems.
 - [02 Flyweight](./plg/training2024/02_06_flyweight.ipynb): `FLyweight` implementation of an object factory that creates multiple objects sharing memory.
 - [02 Proxy](./plg/training2024/02_07_proxy.ipynb): `Proxy` implementation of an expensive-to-create object (e.g. `Book`).
+- [03 Chain Of Responsibility](./plg/training2024/03_01_chain_of_responsibility.ipynb):
+- [03 Command](./plg/training2024/03_02_command.ipynb):
+- [03 Interpreter](./plg/training2024/03_03_interpreter.ipynb):
+- [03 Iterator](./plg/training2024/03_04_iterator.ipynb):
+- [03 Mediator](./plg/training2024/03_05_mediator.ipynb):
+- [03 Memento](./plg/training2024/03_06_memento.ipynb):
+- [03 Observer](./plg/training2024/03_07_observer.ipynb):
+- [03 State](./plg/training2024/03_08_state.ipynb):
+- [03 Strategy](./plg/training2024/03_09_strategy.ipynb):
+- [03 Template Method](./plg/training2024/03_10_template_method.ipynb):
+- [03 Visitor](./plg/training2024/03_11_visitor.ipynb):
 
 # References
 
