@@ -5,7 +5,7 @@ using namespace std;
 enum Direction {
     NORTH,
     EAST,
-    SOUTH, 
+    SOUTH,
     WEST
 };
 
