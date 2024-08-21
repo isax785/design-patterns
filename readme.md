@@ -24,7 +24,7 @@
 - [Playground](./plg/): a playground to practice design patterns.
 - [Sources](./src/): sources and utilities:
   - [python-patterns](./src/python-patterns/): a collection of design patterns and idioms, including their testing. More details into [readme.md](./src/python-patterns/README.md).
-  - [Slides for the Training](./src/slides/): slides of the training on design patterns.
+  - [Training Course Slides](./plg/training2024/slides/): slides of the training course on design patterns.
 
 ## Playground
 
