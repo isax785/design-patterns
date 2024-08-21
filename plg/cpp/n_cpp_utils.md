@@ -26,3 +26,5 @@ public:
 Interface* my_foo = /* somehow construct either a Foo or a Bar */;
 Interface* copy = my_foo->clone();
 ```
+
+

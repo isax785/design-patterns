@@ -1,19 +1,21 @@
 # Readme
 
 - [Readme](#readme)
-- [Tasks](#tasks)
-- [Content](#content)
+- [Python](#python)
+  - [Content](#content)
   - [Playground](#playground)
+- [C++](#c)
+  - [Content](#content-1)
 - [References](#references)
 
 ---
 
-# Tasks
+# Python
 
 - [ ] exercises (see book [Practical Python Design Patterns](./src/lnk/[book]%20Practical%20Python%20Design%20Patterns_%20Pythonic%20Solutions%20to%20Common%20Problems.pdf%20-%20Shortcut.lnk))
 - [x] [Notebook](./ntb/practicalPythonDesignPatterns.ipynb)  explode into multiple interconnected files
 
-# Content
+## Content
 
 - [Development](./dev/): scripts and notebooks for the development of classes and functions.
 - [Documentation](./doc/): some notes reported into documentation files.
@@ -66,6 +68,13 @@ Folder `training2024` content:
 - [03 Strategy](./plg/training2024/03_09_strategy.ipynb):
 - [03 Template Method](./plg/training2024/03_10_template_method.ipynb):
 - [03 Visitor](./plg/training2024/03_11_visitor.ipynb):
+
+# C++
+
+## Content
+
+- [C++ Playground Notes MOC](./plg/cpp/n_cpp_00_MOC.md)
+
 
 # References
 
