@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class AbstractPrototype {
@@ -32,15 +33,22 @@ class ConcreteProtoB: public AbstractPrototype {
         virtual void print() const override {cout << "Prototype B - value: " << _v << endl;};
 };
 
-void print_id(AbstractPrototype const &proto) {
-    cout << "Prototype ID: " << &proto << endl;
+void print_id(AbstractPrototype const &proto, string s="") {
+    cout << s << "Prototype ID: " << &proto << endl;
 }
 
 int main() {
+    // poitner instance
     ConcreteProtoA* proto_a_ptr = new ConcreteProtoA{10};
     print_id(*proto_a_ptr);
     proto_a_ptr->print();
+    ConcreteProtoA* proto_a_ptr_clone = proto_a_ptr->clone();
+    print_id(*proto_a_ptr_clone, "cloned ");
+    proto_a_ptr_clone->print();
+    // instance
     ConcreteProtoA proto_a = ConcreteProtoA{100};
     print_id(proto_a);
     proto_a.print();
+    // ConcreteProtoA proto_a_clone = proto_a.clone(); // not allowed since a pointer to the clone is returned
+    ConcreteProtoA* proto_a_clone = proto_a.clone();
 }

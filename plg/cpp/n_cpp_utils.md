@@ -2,6 +2,8 @@
 
 ## Clone an Object
 
+> See also the [Prototype (C++) implementation](../cpp/01_05_prototype.cpp) for a more detailed example.
+
 Implement a dedicated `clone` method (`Interface* clone() const { return new Foo(*this); }`):
 
 ```cpp
