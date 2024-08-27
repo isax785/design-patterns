@@ -29,7 +29,25 @@ struct Abstract2 : Concrete
     virtual void h() = 0;
     void g() override = 0; // pure virtual overrider
 }; // "Abstract2" is abstract
- 
+
+// Pure Abstract Struct (Interface)
+struct MessageProvider {
+    // Pure Virtual Method
+    virtual std::string getMessage() const = 0;
+
+    // Virtual Destructor
+    virtual ~MessageProvider() {}
+};
+
+// Concrete Struct that Implements the Pure Abstract Struct
+struct HelloWorldProvider : public MessageProvider {
+    // Override the pure virtual method
+    std::string getMessage() const override {
+        return "Hello, World!";
+    }
+};
+
+
 int main()
 {
     // Abstract a;   // Error: abstract class
@@ -46,4 +64,10 @@ int main()
     Abstract* p = &b; // OK to poin to the instnce with the abstract parent type
     cout << typeid(p).name() << endl;
     cout << "Is p a pointer? " << typeid(p).__is_pointer_p() << endl;
+
+    // Instantiate the concrete struct
+    HelloWorldProvider provider;
+
+    // Use the getMessage method
+    std::cout << provider.getMessage() << std::endl;
 }
