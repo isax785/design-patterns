@@ -8,6 +8,7 @@
 - [ ] `#c` is override mandatory for overriding, `struct` and `class`
 - [ ] `#c` what if a virtual method is not `=0` (i.e. declared but not defined)
 - [ ] `#c` pure abstract class/struct vs abstract class/struct
+- [ ] classes: practice with pointers and normal declaration
 
 - ✅ done
 
