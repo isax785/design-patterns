@@ -3,6 +3,8 @@
     "files.associations": {
         "ostream": "cpp",
         "system_error": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "string": "cpp",
+        "format": "cpp"
     }
 }

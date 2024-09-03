@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
 
-// `static`: members that are not bound to class instances
+// `static`: members (attributes and methodx) that are not 
+//           bounded to class instances,
+//           they are bounded to the class definition
 
 class Singleton {
     public:

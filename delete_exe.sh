@@ -10,7 +10,8 @@ if [ ${#file_formats[@]} -eq 0 ]; then
 fi
 
 # Construct the find command with multiple -name conditions
-find_command="find . -type f"
+find_command="find . -type f \("
+# find_command="find . \("
 
 for ext in "${file_formats[@]}"; do
   find_command+=" -name '*.$ext' -o"
@@ -21,9 +22,10 @@ done
 # Remove the trailing -o
 find_command=${find_command::-3}
 # echo "$find_command"
+# eval $find_command
 
 # Add the -exec part
-find_command+=" -exec rm -f {} \;"
+find_command+=" \) -exec rm -f {} \;"
 # echo "$find_command"
 
 # Execute the find command
