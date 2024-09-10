@@ -5,6 +5,7 @@
         "system_error": "cpp",
         "new": "cpp",
         "string": "cpp",
-        "format": "cpp"
+        "format": "cpp",
+        "random": "cpp"
     }
 }
