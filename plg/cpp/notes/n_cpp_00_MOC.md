@@ -1,13 +1,15 @@
 # C++ Notes MOC
 
 - [N - C++ Utilities](./n_cpp_utils.md)
-- [N - Creational Design Patterns](./n_cpp_creational.md)
+- [N - Creational Design Patterns](./n_cpp_01_creational.md)
+- [N - Structural Design Patterns](./n_cpp_02_structural.md)
+- [N - Behavioral Design Patterns](./n_cpp_03_behavioral.md)
 
 ---
 
-- [ ] `#c` is override mandatory for overriding, `struct` and `class`
-- [ ] `#c` what if a virtual method is not `=0` (i.e. declared but not defined)
-- [ ] `#c` pure abstract class/struct vs abstract class/struct
+- [ ] `#q` is override mandatory for overriding, `struct` and `class`
+- [ ] `#q` what if a virtual method is not `=0` (i.e. declared but not defined)
+- [ ] `#q` pure abstract class/struct vs abstract class/struct
 - [ ] classes: practice with pointers and normal declaration
 
 - ✅ done
