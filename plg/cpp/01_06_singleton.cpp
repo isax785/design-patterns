@@ -28,7 +28,7 @@ int main() {
 Singleton* Singleton::_instance = 0;
 int Singleton::_counter = 0;
 Singleton::Singleton() {
-    cout << "Creating Singleton Object" << endl;
+    cout << "Creating Singleton Object ... Done!" << endl;
 };
 Singleton* Singleton::Instance() {
     if (_instance == 0) {
