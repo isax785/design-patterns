@@ -5,6 +5,7 @@
   - [Static Methods](#static-methods)
   - [Formatted Strings](#formatted-strings)
     - [An Interesting Case](#an-interesting-case)
+  - [Sleep](#sleep)
 
 ---
 
@@ -97,3 +98,27 @@ Now, the first parameter in the left-to-right list of + operations is a std::str
 ```cpp
 std::string var = std::string("sometext") + somevar + "sometext" + somevar;
 ```
+
+## Sleep
+
+Function `Sleep` included into the headers `windows.h`|`unistd.h` (depending on the OS).
+
+It requires time in `ms`.
+
+```cpp
+#include <windows.h>
+// #include <unistd.h> // Linux
+
+using namespace std;
+
+int main() {
+    ...
+    Sleep(3e3);
+    ...
+}
+```
+
+Depending on the OS:
+
+- Windows `#include <windows.h>` -> `Sleep()`
+- UNIX/Linux `#include <unistd.h>` -> `sleep()`
