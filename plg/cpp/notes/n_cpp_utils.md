@@ -6,6 +6,7 @@
   - [Formatted Strings](#formatted-strings)
     - [An Interesting Case](#an-interesting-case)
   - [Sleep](#sleep)
+  - [`cout` Overloading](#cout-overloading)
 
 ---
 
@@ -122,3 +123,26 @@ Depending on the OS:
 
 - Windows `#include <windows.h>` -> `Sleep()`
 - UNIX/Linux `#include <unistd.h>` -> `sleep()`
+
+## `cout` Overloading
+
+To use `std::cout` for printing a custom object, we need to overload the `<<` operator. In most cases, we require the friend keyword to access non-public members of the class.
+
+```cpp
+#include <iostream>
+using namespace std;
+class A {
+    int val;
+public:
+    A(int v) : val(v) {}
+    friend ostream& operator<<(ostream& os, const A& obj) {
+        os << obj.val;
+        return os;
+    }
+};
+int main() {
+    A obj(42);
+    cout <<"Value = "<< obj << endl; // Output: Value: 42
+    return 0;
+}
+```
