@@ -13,6 +13,7 @@ struct Document {
     string content;
     Document() : content("") {};
     void insert_text(string text, int position=0) {
+        cout << "DBG: " << content.size() << endl; // DEBUG
         content = content.substr(0, position) + 
                   text + 
                   content.substr(position);
@@ -41,6 +42,7 @@ struct InsertTextCommand : public Command {
         _doc.delete_text(_position, _text.size());
     }
 };
+
 struct DeleteTextCommand : public Command {
     Document _doc;
     string _deleted_text;
@@ -85,11 +87,25 @@ struct TextEditor {
     }
 };
 
+void display_editor_stacks(TextEditor *editor) {
+    cout << "History:" << endl;
+    for (auto c : editor->history) 
+        cout << "  " << typeid(c).name() << " - " << &c << endl;
+        
+    cout << "Undo:" << endl;
+    for (auto c : editor->undo_stack) 
+        cout << "  " << typeid(c).name() << " - " << &c << endl;
+};
+
 int main() {
     Document doc = Document();
     TextEditor editor {};
-    InsertTextCommand command = InsertTextCommand(editor._doc, "Hello", 0);
-    editor.execute_command(command);
+    InsertTextCommand command0 = InsertTextCommand(editor._doc, "Hello", 0);
+    editor.execute_command(command0);
     editor.show_document();
-
+    // display_editor_stacks(&editor);
+    // InsertTextCommand command1 = InsertTextCommand(editor._doc, " World", 4);
+    // editor.execute_command(command1);
+    // editor.show_document();
+    // display_editor_stacks(&editor);
 }
