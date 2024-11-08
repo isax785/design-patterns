@@ -2,6 +2,7 @@
 *.lnk
 *.exe
 *.o
+tempCodeRunner*
 
 # VSCode settings (.json)
 .vscode/*

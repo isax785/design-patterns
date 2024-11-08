@@ -17,6 +17,10 @@ struct Document {
         content = content.substr(0, position) + 
                   text + 
                   content.substr(position);
+
+        
+        cout << "DBG: " << content.size() << endl; // DEBUG
+        cout << "DBG: " << &content << " " << content << endl; // DEBUG
     }
     string delete_text(int position, int length) {
         string deleted_text = content.substr(position, length);
@@ -34,9 +38,12 @@ struct InsertTextCommand : public Command {
     string _text;
     int _position;
     InsertTextCommand(Document &doc, string text, int position) :
-        _doc(doc), _text(text), _position(position) {};
+        _doc(doc), _text(text), _position(position) {
+            cout << &doc << " " << &doc << endl; // DEBUG
+        };
     void execute() override {
         _doc.insert_text(_text, _position);
+        cout << "DBG-ITex: " << &_doc << " " << _doc.content << endl; // DEBUG
     }
     void undo() override {
         _doc.delete_text(_position, _text.size());
@@ -57,7 +64,6 @@ struct DeleteTextCommand : public Command {
         _doc.insert_text(_deleted_text, _position);
     }
 };
-
 
 struct TextEditor {
     Document _doc;
@@ -83,6 +89,7 @@ struct TextEditor {
         history.push_back(command);
     }
     void show_document() {
+        cout << "DBG-SH: " << &_doc << " " << _doc.content << endl; // DEBUG
         cout << _doc << endl;
     }
 };
@@ -98,11 +105,14 @@ void display_editor_stacks(TextEditor *editor) {
 };
 
 int main() {
-    Document doc = Document();
-    TextEditor editor {};
+    TextEditor editor;
+    // editor._doc.insert_text("HELLO", 0);
+    // cout << &editor._doc << ' ' << editor._doc.content << endl; // DEBUG
     InsertTextCommand command0 = InsertTextCommand(editor._doc, "Hello", 0);
+    cout << &command0._doc << ' ' << command0._doc.content << endl; // DEBUG
     editor.execute_command(command0);
     editor.show_document();
+    cout << &editor._doc << ' ' << editor._doc.content << endl; // DEBUG
     // display_editor_stacks(&editor);
     // InsertTextCommand command1 = InsertTextCommand(editor._doc, " World", 4);
     // editor.execute_command(command1);
