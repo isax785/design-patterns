@@ -6,7 +6,7 @@
   - [Formatted Strings](#formatted-strings)
     - [An Interesting Case](#an-interesting-case)
   - [Sleep](#sleep)
-  - [`cout` Overloading](#cout-overloading)
+  - [`cout` Operator Override](#cout-operator-override)
 
 ---
 
@@ -124,7 +124,7 @@ Depending on the OS:
 - Windows `#include <windows.h>` -> `Sleep()`
 - UNIX/Linux `#include <unistd.h>` -> `sleep()`
 
-## `cout` Overloading
+## `cout` Operator Override
 
 To use `std::cout` for printing a custom object, we need to overload the `<<` operator. In most cases, we require the friend keyword to access non-public members of the class.
 
