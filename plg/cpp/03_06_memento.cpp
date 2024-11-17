@@ -18,12 +18,16 @@ struct History {
     vector<Memento> _mementos;
     History() {_mementos={};}
     void push(Memento mem) {_mementos.push_back(mem);}
-    Memento* pop(){
-        if (_mementos.size()==0) return nullptr;
+    Memento pop(){
+        if (_mementos.size()==0) return Memento("");
         Memento mem = _mementos.back();
         _mementos.pop_back();
-        return &mem;
+        return mem;
     };
+};
+
+void display_content(string con) {
+    cout << "Current content: " << con << endl;
 };
 
 int main() {
@@ -34,7 +38,10 @@ int main() {
     editor.type("This is the SECOND sentence. ");
     history.push(editor.save());
     editor.type("This is the THIRD sentence. ");
+    display_content(editor.get_content());
     // history.push(editor.save());
     history.push(editor.get_content());
-    editor.restore(history.pop());
+    Memento mem = history.pop();
+    editor.restore(mem);
+    display_content(editor.get_content());
 }
