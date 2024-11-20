@@ -1,11 +1,9 @@
 #include "dp_includes.h"
-#include <chrono>
-#include <ctime>  
 
 string current_datetime() {
-    auto now = std::chrono::system_clock::now();
-    std::time_t datetime = std::chrono::system_clock::to_time_t(now);
-    return std::ctime(&datetime);
+    auto now = chrono::system_clock::now();
+    time_t datetime = chrono::system_clock::to_time_t(now);
+    return ctime(&datetime);
 }
 
 // to be declared first to avoid circular-reference issues

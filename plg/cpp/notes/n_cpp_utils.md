@@ -5,6 +5,7 @@
   - [Static Methods](#static-methods)
   - [Formatted Strings](#formatted-strings)
     - [An Interesting Case](#an-interesting-case)
+  - [String Cases](#string-cases)
   - [Sleep](#sleep)
   - [`cout` Operator Override](#cout-operator-override)
   - [Date and Time](#date-and-time)
@@ -102,6 +103,10 @@ Now, the first parameter in the left-to-right list of + operations is a std::str
 std::string var = std::string("sometext") + somevar + "sometext" + somevar;
 ```
 
+## String Cases
+
+
+
 ## Sleep
 
 Function `Sleep` included into the headers `windows.h`|`unistd.h` (depending on the OS).
@@ -194,7 +199,7 @@ To solve circular dependencies with class member and function declarations, you 
     };
 ```
 
-To define class member functions that access members of the other class, you must define the function after the other class has been defined:
+To define class member functions that access members of the other class, you must define the function <u>after the other class has been defined</u>:
 
 ```cpp
     class B;
